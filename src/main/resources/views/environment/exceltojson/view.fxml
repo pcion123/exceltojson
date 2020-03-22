@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="783.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tiny.exceltojson.ExcelController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefWidth="1240.0" spacing="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+      <TextArea fx:id="textLog" prefHeight="677.0" prefWidth="760.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <TextField fx:id="excelText" layoutX="80.0" layoutY="20.0" prefHeight="23.0" prefWidth="336.0" />
+      <Button layoutX="505.0" layoutY="20.0" mnemonicParsing="false" onAction="#onConverter" text="轉檔" />
+      <TextField fx:id="jsonText" layoutX="80.0" layoutY="48.0" prefHeight="23.0" prefWidth="336.0" />
+      <Label layoutX="20.0" layoutY="24.0" text="輸入目錄：" />
+      <Label layoutX="20.0" layoutY="52.0" text="輸出目錄：" />
+      <Button layoutX="427.0" layoutY="48.0" mnemonicParsing="false" onAction="#onJsonPath" prefHeight="23.0" prefWidth="70.0" text="選擇目錄" />
+      <Button layoutX="427.0" layoutY="20.0" mnemonicParsing="false" onAction="#onExcelPath" prefHeight="23.0" prefWidth="70.0" text="選擇目錄" />
+   </children>
+</AnchorPane>
